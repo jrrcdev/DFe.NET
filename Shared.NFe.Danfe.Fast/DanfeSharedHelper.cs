@@ -122,7 +122,7 @@ namespace Shared.DFe.Danfe.Fast
             string resumoCanhoto = string.Empty;
             string contingenciaDescricao = string.Empty;
             string contingenciaValor = string.Empty;
-            string consultaAutenticidade = "Consulta de autenticidade no portal nacional da NF-e" + Environment.NewLine +
+            string consultaAutenticidade = "Consulta de autenticidade no portal nacional da NF-e \n" +
                                         "www.nfe.fazenda.gov.br/portal ou no site da Sefaz autorizadora";
 
             if (configuracaoDanfeNfe.ExibirResumoCanhoto)
@@ -146,12 +146,12 @@ namespace Shared.DFe.Danfe.Fast
                          proc.protNFe.infProt.cStat == 151 ||
                          proc.protNFe.infProt.cStat == 155))
                     {
-                        mensagem = "NFe sem Valor Fiscal - HOMOLOGAÇÃO" + Environment.NewLine +
+                        mensagem = "NFe sem Valor Fiscal - HOMOLOGAÇÃO \n" +
                                    "NFe em Contingência - CANCELADA";
                     }
                     else
                     {
-                        mensagem = "NFe sem Valor Fiscal - HOMOLOGAÇÃO" + Environment.NewLine +
+                        mensagem = "NFe sem Valor Fiscal - HOMOLOGAÇÃO \n" +
                                    "NFe em Contingência";
                     }
                 }

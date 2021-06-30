@@ -50,7 +50,7 @@ namespace NFe.Danfe.Fast.Standard
             {
                 try
                 {
-                    Relatorio.Prepare();
+                    Relatorio.Prepare();                    
                     Relatorio.Export(new PDFSimpleExport(), stream);
                     return stream.ToArray();
                 }
